@@ -39,7 +39,7 @@ function getItemByBarcode(barcode){
 }
 
 function getOutputString(item, num){
-  return '名称：'+ item.name +'，数量：'+ num +'瓶，单价：'+ item.price.toFixed(2) +'(元)，小计：'+ (item.price * num).toFixed(2) +'(元)';
+  return '名称：'+ item.name +'，数量：'+ num + item.unit + '，单价：'+ item.price.toFixed(2) +'(元)，小计：'+ (item.price * num).toFixed(2) +'(元)';
 }
 
 function formatOutput(output, totalMoney){
